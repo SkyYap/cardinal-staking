@@ -253,19 +253,19 @@
     eslint-plugin-unused-imports "^2.0.0"
     prettier "^2.7.1"
 
-"@saberhq/option-utils@^1.14.4":
-  version "1.14.4"
-  resolved "https://registry.yarnpkg.com/@saberhq/option-utils/-/option-utils-1.14.4.tgz#86c247b65d0f1bd56327d014666948044f771b1f"
-  integrity sha512-CHdKspiPu2iqtR9nBpdvFjHO5N3iGodO9TcoNZ9I3bWnV3iwMMEhiWx5Ik3FtG9o/RaF9HstWAUbR7Xz/v6SJw==
+"@saberhq/option-utils@^1.14.6":
+  version "1.14.6"
+  resolved "https://registry.yarnpkg.com/@saberhq/option-utils/-/option-utils-1.14.6.tgz#c48e4afb9d9a030e2b676beeeb2481c6529d3eb9"
+  integrity sha512-85IMZiYzSf3H7/ZYty+I5JW6EYGJQ8lmRri+wVuhmLtDX+E/iqEBeoS+ns56ZcyfRGl7nsuUriWnJamNz9ekBQ==
   dependencies:
     tslib "^2.4.0"
 
 "@saberhq/solana-contrib@^1.12.44", "@saberhq/solana-contrib@^1.14.1", "@saberhq/solana-contrib@^1.14.4":
-  version "1.14.4"
-  resolved "https://registry.yarnpkg.com/@saberhq/solana-contrib/-/solana-contrib-1.14.4.tgz#d062cd0817e60ae190e81d08e2e026c183c15ecd"
-  integrity sha512-mV7nGecTaVB4opsC5fZT3fRcQHBQ7OyUYGCCHge6Q65rOTfajvVusm+LA2joalWUuYpxZuNH3rQZCY8WRNSpTQ==
+  version "1.14.6"
+  resolved "https://registry.yarnpkg.com/@saberhq/solana-contrib/-/solana-contrib-1.14.6.tgz#3fe36ace42b94f5c3f75a60b6b32d010d8b21f93"
+  integrity sha512-lPnzWgAk+xAYtssvLUTc6e6r0czJaMAqCZ2p7I7DsEFBpWgEzj6Tw7rYMXk1pmwgxg48vGWzBZK/aw+m7ccn1A==
   dependencies:
-    "@saberhq/option-utils" "^1.14.4"
+    "@saberhq/option-utils" "^1.14.6"
     "@solana/buffer-layout" "^4.0.0"
     "@types/promise-retry" "^1.1.3"
     "@types/retry" "^0.12.2"
