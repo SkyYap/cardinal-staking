@@ -5,7 +5,7 @@ solana_version = "1.9.13"
 test = "yarn mocha tests/*.spec.ts"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "./tests/test-key.json"
 
 [programs.mainnet]
@@ -13,8 +13,8 @@ cardinal_stake_pool = "stkBL96RZkjY5ine4TvPihGqW8UHJfch2cokjAPzV8i"
 cardinal_reward_distributor = "rwdNPNPS6zNvtF6FMvaxPRjzu2eC51mXaDT9rmWsojp"
 
 [programs.devnet]
-cardinal_stake_pool = "stkBL96RZkjY5ine4TvPihGqW8UHJfch2cokjAPzV8i"
-cardinal_reward_distributor = "rwdNPNPS6zNvtF6FMvaxPRjzu2eC51mXaDT9rmWsojp"
+cardinal_stake_pool = "FYp6ubFr3JhMfQWB6NJqWsRxFiJA6uSkzWec3cdJ7va3"
+cardinal_reward_distributor = "8FupfFhQfFpe4f8ZZjiX3Ujcxj2MmGtT6CFSmdeFTQPj"
 
 [programs.testnet]
 cardinal_stake_pool = "stkBL96RZkjY5ine4TvPihGqW8UHJfch2cokjAPzV8i"
