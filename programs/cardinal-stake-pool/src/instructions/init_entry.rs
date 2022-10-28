@@ -42,7 +42,7 @@ pub fn handler(ctx: Context<InitEntryCtx>, _user: Pubkey) -> Result<()> {
     // assert metadata account derivation
     assert_derivation(
         &mpl_token_metadata::id(),
-        &&ctx.accounts.original_mint_metadata.to_account_info(),
+        &ctx.accounts.original_mint_metadata.to_account_info(),
         &[
             mpl_token_metadata::state::PREFIX.as_bytes(),
             mpl_token_metadata::id().as_ref(),

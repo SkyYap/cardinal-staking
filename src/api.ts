@@ -415,6 +415,7 @@ export const unstake = async (
   params: {
     stakePoolId: PublicKey;
     originalMintId: PublicKey;
+    skipRewardMintTokenAccount?: boolean;
   }
 ): Promise<Transaction> =>
   withUnstake(new Transaction(), connection, wallet, params);

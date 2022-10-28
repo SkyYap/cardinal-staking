@@ -305,8 +305,11 @@ export const withReclaimFunds = async (
     true
   );
 
-  const authorityTokenAccountId = await findAta(
+  const authorityTokenAccountId = await withFindOrInitAssociatedTokenAccount(
+    transaction,
+    connection,
     rewardDistributorData.parsed.rewardMint,
+    wallet.publicKey,
     wallet.publicKey,
     true
   );

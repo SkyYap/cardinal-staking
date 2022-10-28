@@ -411,8 +411,35 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "14c189c53d098945499cdfa7ecc63567cf3886b3332b312a5b4585d8d3a6a610"
 
 [[package]]
+name = "cardinal-payment-manager"
+version = "1.7.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8ac518a7e60576a17fbc1ac83801e5c36aef3a20fe6b305681e6dcd7bf346704"
+dependencies = [
+ "anchor-lang",
+ "anchor-spl",
+ "mpl-token-metadata",
+ "solana-program",
+ "spl-associated-token-account",
+ "spl-token",
+]
+
+[[package]]
+name = "cardinal-receipt-manager"
+version = "1.10.5"
+dependencies = [
+ "anchor-lang",
+ "anchor-spl",
+ "cardinal-payment-manager",
+ "cardinal-stake-pool",
+ "proptest",
+ "solana-program",
+ "spl-token",
+]
+
+[[package]]
 name = "cardinal-reward-distributor"
-version = "1.10.0"
+version = "1.10.5"
 dependencies = [
  "anchor-lang",
  "anchor-spl",
@@ -424,10 +451,11 @@ dependencies = [
 
 [[package]]
 name = "cardinal-stake-pool"
-version = "1.10.0"
+version = "1.10.5"
 dependencies = [
  "anchor-lang",
  "anchor-spl",
+ "cardinal-payment-manager",
  "cardinal-token-manager",
  "mpl-token-metadata",
  "proptest",
@@ -437,9 +465,9 @@ dependencies = [
 
 [[package]]
 name = "cardinal-token-manager"
-version = "1.5.20"
+version = "1.7.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f5c282406caf652b3b3a15ab44a21a7794e155eb0e40c5c9ec92c77c77307899"
+checksum = "eefd06929bb8cb32bc2593cc1a9984c6106e0593de791439643766cb56617342"
 dependencies = [
  "anchor-lang",
  "anchor-spl",
